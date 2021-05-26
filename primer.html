@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Валидация </title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/validation.css" rel="stylesheet">
+	<link href="css/minimal-table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body bgcolor="CDB7B5">
+	<br> <br> <br>
+	<p class="fig"> <button style="background-color:  #CFCFCF">
+			<a href="index.html"> Вернуться обратно </a> </button> </p>
+
+	<div class="wrap">
+		<h1> Валидация </h1>
+		<form name="feedback" method="POST">
+			<ul class="form-list">
+				<li>
+					<label>Ваше имя:</label>
+					<div>
+						<input class="form-control" type="text" name="username" maxlength="30" value="">
+					</div>
+					<span class="error"></span>
+				</li>
+				<li>
+					<label>Электронная почта:</label>
+					<div>
+						<input class="form-control" type="text" name="usermail" maxlength="50" value="">
+					</div>
+					<span class="error"></span>
+				</li>
+				<li>
+					<label>Номер телефона:</label>
+					<div>
+						<input class="form-control" type="text" name="userphone" maxlength="18" value="">
+					</div>
+					<span class="error"></span>
+				</li>
+				<li>
+					<label>Тема сообщения:</label>
+					<div>
+						<input class="form-control" type="text" name="subject" maxlength="50" value="">
+					</div>
+					<span class="error"></span>
+				</li>
+				<li>
+					<label>Текст сообщения:</label>
+					<div>
+						<textarea class="form-control" name="textmess"></textarea>
+					</div>
+					<span class="error"></span>
+				</li>
+				<li>
+					<label></label>
+					<div>
+						<button id="send_mess" type="submit">отправить сообщение</button>
+					</div>
+				</li>
+			</ul>
+			<br>
+			<p> <label> <input type="checkbox" name="terms"> </label>
+				Я согласен с <a href="/terms"> условиями пользования</a>
+			</p>
+		</form>
+	</div>
+
+	<script src="validation.js"></script>
+</body>
+
+</html>
